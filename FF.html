@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Header section-->
+<head>
+    <title>Spectrum's Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<!-- Body section-->
+<body>
+    <!-- Navigation bar goes here -->
+    <div class="navigation bar">
+        <div>
+            <a class="navbarlink" href="index.html">Home</a>
+        </div>
+        <div>
+            <a class="navbarlink" href="about.html">About This Site</a>
+        </div>
+    </div>
+
+    <!-- Small space between top of page and top banner because of nav bar overlaying the top and hiding this empty space -->
+    <div class="row" style="height:45px; width:100%;"></div>
+
+    <!-- Top Banner - About me section -->
+    <div class="row">
+        <div class="column topbanner" style="width:60%;">
+            <h1>Fromage Fortress</h1>
+            <h2>A level 6 university group project</h2>
+            <p>
+                Fromage fortress is a Dungeon Defenders-inspired, third-person tower defense game developed by Cold Soup Studios between January and May 2024.<br>
+                The objective of the game is to defend your kitchen's fridge from the mice attempting to steal the cheese it contains using a variety of weapons and placable towers.
+                You can also upgrade your arsenal along the way using roguelike-esque reward selections at the end of each wave.<br><br>
+                Fromage Fortress was exhibited at both Insomnia 2024 and ComX 2024!
+            </p>
+
+            <video width="640" height="480" autoplay muted>
+                <source src="video/FFTrailer.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                <h1><a href="https://coldsoupstudios.itch.io/fromage-fortress-v4-2" target="_blank"> The game is on itch.io here!!</a></h1><br><br>
+            </p>
+
+            <p>
+                I individually was tasked with creating the audio manager and character controller the game would use. I created all of my assets from scratch and iteratively worked to produce something modular and widely applicable after the initial prototype was successful, albeit difficult to work with due to it being a monolithic single class.
+                The newer and final component-based system is much better, as the player's camera, movement, equipment and animations are all handled by different components.
+            </p>
+
+            <p>
+                Both I and Mia, being the team's programmers, are very happy with how we worked on the game. All of the elements we produced had a big focus on modularity and application, making expanding on existing content extremely easy once the initial implementation was finished.
+                Modularity also made it much easier to modify elements working in a group, as there was significantly reduced inconvienience caused by merge issues on the project repository if people needed to make small changes to elements individually.
+                <br><br>
+                The game's last-implemented weapon upgrade: the flamethrower, was implemented in around as little as 20 minutes thanks to the work we did earlier on! Keeping ourselves as free of technical debt as possible really helped keep later development smooth.
+            </p>
+
+            <p>
+                All members of our group worked very well together, and I'm hugely grateful for the opportunity I had to work with everyone.
+            </p>
+
+            <p>
+                Cold Soup Studios:
+                <ul style="text-align:left;">
+                    <li>Team lead and AI programmer: Mia Kellet</li>
+                    <li>Gameplay programmer: Myself</li>
+                    <li>Level designer: Owen Morris</li>
+                    <li>Audio design: Thomas Hall</li>
+                    <li>UI Design and assets: Krista Kanzer</li>
+                    <li>Models and artwork: Kath Lambert</li>
+                    <li>Rigging and Animation: Tom Boughton</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    
+
+    <!-- Page footer, with contact links and whatnot -->
+    <div class="row">
+        <div class="footer">
+            <!-- Thing on the left for social links I guess -->
+        </div>
+    </div>
+</body>
+</html>
