@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Header section-->
+<head>
+    <title>Spectrum's Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<!-- Body section-->
+<body>
+    <!-- Navigation bar goes here -->
+    <div class="navigation bar">
+        <div>
+            <a class="navbarlink" href="index.html">Home</a>
+        </div>
+        <div>
+            <a class="navbarlink" href="about.html">About This Site</a>
+        </div>
+    </div>
+
+    <!-- Small space between top of page and top banner because of nav bar overlaying the top and hiding this empty space -->
+    <div class="row" style="height:45px; width:100%;"></div>
+
+    <!-- Top Banner - About me section -->
+    <div class="row">
+        <div class="column topbanner" style="width:60%;">
+            <h1>AI Population Simulation</h1>
+            <h2></h2>
+            <p>
+                This is a small experiment in which I put together some rudimentary AI behaviours featuring short-term-memory, vision cones, and an approximation of hearing.
+            </p>
+            <p>
+                Entities weigh up their priorities and behave best on what they deem "most suitable" for their situation. 
+                <br>They are capable of starving to predator and prey nodes must hunt or scavenge to stay alive, while prey must also consider the need to flee or hide from predator nodes which may be chasing them.
+                <br>Predators also avoid chasing targets in areas with many other predators as they do not wish to compete for food, potential targets in such areas have their utility value reduced when considering them.
+                <br>Objects that are of note that enter the vision cone of a node enter its memory.
+            </p>
+            <img src="images/AI_Memory.png">
+            <p>
+                The scene features a small variety of shaders. Between all of them, there is usage of uniforms, extensive use of perlin noise maps, application of screen-space rendering, and vertex manipulation and fragment coloring based on position and timing.<br>
+                I would honestly love to work on a similar project but invest much more time into making the visuals truly stunning.
+            </p>
+            <br><br>
+        </div>
+    </div>
+
+    
+
+    <!-- Page footer, with contact links and whatnot -->
+    <div class="row">
+        <div class="footer">
+            <!-- Thing on the left for social links I guess -->
+        </div>
+    </div>
+</body>
+</html>
