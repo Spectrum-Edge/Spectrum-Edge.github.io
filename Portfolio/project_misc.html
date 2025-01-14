@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Header section-->
+<head>
+    <title>Spectrum's Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<!-- Body section-->
+<body>
+    <!-- Navigation bar goes here -->
+    <div class="navigation bar">
+        <div>
+            <a class="navbarlink" href="index.html">Home</a>
+        </div>
+        <div>
+            <a class="navbarlink" href="about.html">About This Site</a>
+        </div>
+    </div>
+
+    <!-- Small space between top of page and top banner because of nav bar overlaying the top and hiding this empty space -->
+    <div class="row" style="height:45px; width:100%;"></div>
+
+    
+    <div class="row">
+        <!-- Top Banner - About me section -->
+        <div class="column topbanner">
+            <h1>Miscellaneous Projects</h1>
+            <h2>Where I get to show off all my little things</h2>
+        </div>
+        <!-- 2 Adjacent lists -->
+        <div class="column topbanner" style="width:75%;">
+            <!-- Left List -->
+            <div class="column inlineprojectlist">
+                <!-- Fake non-euclidean portals -->
+                <div class="column inlineprojectlist inlineproject">
+                    <h1>Fake non-euclidean geometry</h1>
+                    <h2>Is that me?</h2>
+                    <video autoplay muted loop>
+                        <source src="video/portalsShowcase.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                        I've created a system that allows a user to place fake portals, which serve as seamless teleporters which also create a local "projection" of a player's character on the other side.<br>
+                    </p>
+                    <p>
+                        The system functions similarly to the endless staircase from Super Mario 64. The player's character and camera are moved instantaneously by the offset of the "portals" from one another to a different area. If the areas look identical, then the player will struggle to pick out when the teleportation occurred, and are unlikely to notice it at all to start with.<br>
+                    </p>
+                    <hr>
+                    <p>
+                        <ul>
+                            <li>Projections and teleportation is all local, meaning ping/lag isn't an issue.</li>
+                            <li>Teleporting <i>other</i> players locally between their projected and real positions mitigates the ability to see them "jump" to their new position.</li>
+                            <li>The portals can also scale players up and down, adjusting their size and movement properties, and their camera position/zoom level, meaning you can connect a tiny doorway to a large one, for instance.</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        This is likely to be more performant than using a surfaceGUI with a copy of the workspace rendered in a viewport, especially if there are multiple portals.<br>
+                        This way of working also allows players to see themselves on the other side of the portal, which is what happens in the infinite tunnel in the video.
+                    </p>
+                    <p>
+                        One small issue is that the areas must look the same on both sides of the portal. If they don't, it's easy to tell what's happening. This makes areas with intricate lighting hard to work with. A part of a room being illuminated through a wall on one side but not the other gives the game away.
+                    </p>
+                </div>
+            </div>
+            <!-- Lazy separator-->
+            <div style="width:2.5%; display:inline-block">
+
+            </div>
+            <!-- Right List -->
+            <div class="column inlineprojectlist">
+                <!-- The patchwork -->
+                <div class="column inlineprojectlist inlineproject">
+                    <h1>Building areas in games</h1>
+                    <h2>Taking advantage of lighting</h2>
+                    <video autoplay muted loop>
+                        <source src="video/patchworkTour.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                        I personally don't think creating environments and areas is my strongest suit, but using lighting, sound and particles I can create a nice sense of atmosphere to boost the quality of my creations.
+                    </p>
+                    <p>
+                        This is supported by a system I created for this project that handles defining "biomes", and transitioning between them. A "biome" is a folder under storage which contains information regarding:
+                        <ul>
+                            <li>Ambient color</li>
+                            <li>Time of day</li>
+                            <li>Depth of field</li>
+                            <li>Bloom</li>
+                            <li>Area music and ambient sound, if needed</li>
+                            <li>Fog color, and start/end distances</li>
+                            <li>Essentially any other property of, or under, the Lighting class</li>
+                        </ul>
+                    </p>
+                </div>
+                <!-- Save data system -->
+                <div class="column inlineprojectlist inlineproject">
+                    <h1>Easy-Save System</h1>
+                    <h2>Packing up a folder to a datastore</h2>
+                    <!-- <video autoplay muted loop><source src="video/FFTrailer.mp4" type="video/mp4"></video> -->
+                    <p>
+                        I wanted to make an easy-to-implement system through which I can add persistent data to a project. Something you can just drop in, and then a folder under the player just has its children, and their relevant properties, persist between sessions.
+                    </p>
+                    <p>
+                        With a system like that, it'd be incredibly easy to implement currency systems into the game. Just add an integer or number value under the player's persistent data folder, and it's done for you!<br>
+                        In-game achievements system that doesn't use badges? Just make having the achievement a boolvalue under the persistent folder!
+                    </p>
+                    <p>
+                        The system is a bit outdated, given how attributes were added to Roblox Studio, and it could do with better validation for not incorrectly overwriting data just in case something goes wrong on Roblox's end. Because of this, I'd like to at some point revise this system and update it to be more versatile and quicker to implement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Page footer, with contact links and whatnot -->
+    <div class="row">
+        <div class="footer">
+            <!-- Thing on the left for social links I guess -->
+        </div>
+    </div>
+</body>
+</html>

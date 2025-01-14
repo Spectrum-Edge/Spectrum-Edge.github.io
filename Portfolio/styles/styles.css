@@ -97,7 +97,6 @@ body {
 
     text-align: center;
 }
-
     .column.topbanner {
         width: 60%;
         height:auto;
@@ -120,6 +119,44 @@ body {
             font-size:small;
             color: #E0E0E0;
         }
+
+    .column.inlineprojectlist {
+        width: 47.5%;
+        height: auto;
+        display: inline-block;
+        border: 1px solid #ccc;
+        vertical-align:top;
+    }
+        .column.inlineprojectlist.inlineproject {
+            width: 95%;
+            height: auto;
+            border: 1px solid #999;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+            .column.inlineprojectlist.inlineproject > h1 {
+                font-family: Geneva, sans-serif;
+                color: #E8E8E8;
+            }
+            .column.inlineprojectlist.inlineproject > h2 {
+                font-family: Geneva, sans-serif;
+                color: #919191;
+            }
+            .column.inlineprojectlist.inlineproject > p {
+                font-family: Geneva, sans-serif;
+                color: #E0E0E0;
+                text-align: left;
+            }
+            .column.inlineprojectlist.inlineproject > ul > li {
+                font-family: Geneva, sans-serif;
+                font-size: small;
+                color: #E0E0E0;
+                text-align:left;
+            }
+            .column.inlineprojectlist.inlineproject > video {
+                width: 90% !important;
+                height: auto !important;
+            }
 
     .column.projectlist {
         width: 80%;

@@ -33,10 +33,11 @@
             <p>
                 I became a part of this project when I offered to assist Sky with the random level generation, after advising her on how she might have created it herself before we decided to collaborate. Below is a video in which you can see the level generating using the system I created.
             </p>
+            <hr>
             <p>
                 Below is a video showing the generation system off. The "Generation buffer" ahead of the player's current room is increased dramatically in order to do this.
                 <br>The video uses a single test room, with 3 doorways inside, as the only generated main room to show off how the generation works in real time. During normal gameplay, rooms will be distinct, and generation will only occur a few rooms ahead of where the players currently are.
-                <ul>
+                <ul style="text-align:left">
                     <li>When the player's character is placed in the first room, the system updates and finds it needs to generate many rooms ahead, due to the desired generation buffer size.</li>
                     <li>The system generates a random room from the currently specified generation set, which can be modified anytime to be a folder of room prefabs, or a specific single room prefab.</li>
                     <li>The system then places side rooms in the previous room if any doors are left unused. There is a modifiable chance that a side room does not attempt to generate</li>
