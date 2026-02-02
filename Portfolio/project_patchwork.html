@@ -26,8 +26,8 @@
     <div class="row">
         <!-- Top Banner - About me section -->
         <div class="column topbanner">
-            <h1>Miscellaneous Projects</h1>
-            <h2>Where I get to show off all my little things</h2>
+            <h1>The Patchwork Project</h1>
+            <h2>A peaceful location with some interesting features</h2>
         </div>
         <!-- 2 Adjacent lists -->
         <div class="column topbanner" style="width:75%;">
@@ -98,16 +98,9 @@
                     <h1>Easy-Save System</h1>
                     <h2>Packing up a folder to a datastore</h2>
                     <!-- <video autoplay muted loop><source src="video/FFTrailer.mp4" type="video/mp4"></video> -->
-                    <p>
-                        I wanted to make an easy-to-implement system through which I can add persistent data to a project. Something you can just drop in, and then a folder under the player just has its children, and their relevant properties, persist between sessions.
-                    </p>
-                    <p>
-                        With a system like that, it'd be incredibly easy to implement currency systems into the game. Just add an integer or number value under the player's persistent data folder, and it's done for you!<br>
-                        In-game achievements system that doesn't use badges? Just make having the achievement a boolvalue under the persistent folder!
-                    </p>
-                    <p>
-                        The system is a bit outdated, given how attributes were added to Roblox Studio, and it could do with better validation for not incorrectly overwriting data just in case something goes wrong on Roblox's end. Because of this, I'd like to at some point revise this system and update it to be more versatile and quicker to implement.
-                    </p>
+                    <p>I've created multipla systems that allow for user data to persist between sessions using data stores. These systems are capable of being bound to a specific folder object instantiated under the player's object, containing the relevant details that need to be saved.</p>
+                    <p>When the player joins and leaves, the system is able to "pack" the folder's content into an indexed table which is saved in the data store, storing the values of those objects and that for those objects' children objects as well.</p>
+                    <p>This simplicity allows it to be dragged and dropped into any project with minimal setup and effort, keeping the system easy to use while not being extremely limiting on what kind of data can be saved.</p>
                 </div>
             </div>
         </div>
